@@ -33,17 +33,6 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_bot" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="162dp"
-        android:layout_marginEnd="149dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/tittlerockpaperscisssor" />
-
-    <ImageView
         android:id="@+id/iv_bot"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -71,7 +60,7 @@
         android:id="@+id/id_score"
         android:layout_width="110dp"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="70dp"
         android:text="Score: Human"
         app:layout_constraintEnd_toStartOf="@+id/human_score"
@@ -93,7 +82,7 @@
         android:layout_width="82dp"
         android:layout_height="40dp"
         android:layout_marginTop="70dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="20dp"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/score_bot"
@@ -115,12 +104,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
         android:layout_marginEnd="176dp"
-        android:layout_marginBottom="28dp"
         android:text="who wins"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="584dp" />
 
     <Button
         android:id="@+id/btn_rock"
@@ -131,6 +119,7 @@
         android:layout_marginEnd="20dp"
         android:text="rock"
         app:layout_constraintEnd_toStartOf="@+id/btn_paper"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/score_bot" />
 
@@ -152,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="37dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="25dp"
         android:text="scissors"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_paper"

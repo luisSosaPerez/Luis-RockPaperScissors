@@ -3,6 +3,7 @@ package com.example.rockpaperscissors;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -26,7 +27,23 @@ public class Main extends AppCompatActivity {
         human_score = (TextView) findViewById(R.id.human_score);
         bot_score = (TextView) findViewById(R.id.bot_score);
 
-
-
+        btn_paper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv_human.setImageResource(R.drawable.paper);
+            }
+        });
+        btn_rock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv_human.setImageResource(R.drawable.rock);
+            }
+        });
+        btn_scissors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv_human.setImageResource(R.drawable.scissors);
+            }
+        });
     }
 }
